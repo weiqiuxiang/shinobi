@@ -1,0 +1,4 @@
+MODEL_FILENAME= data/MAP_EDITOR/Models/stone.x
+MODEL_FILENAME= data/MAP_EDITOR/Models/Tree.x
+MODEL_FILENAME= data/MAP_EDITOR/Models/House.x
+MODEL_FILENAME= data/MAP_EDITOR/Models/BigTree.x

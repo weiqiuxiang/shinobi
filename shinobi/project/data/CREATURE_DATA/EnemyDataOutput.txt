@@ -1,0 +1,105 @@
+#-----------------------------------------
+#****************ìGÇÃÉfÅ[É^***************
+#-----------------------------------------
+
+#-----------------------------------------
+#å¢
+#-----------------------------------------
+ENEMY_BEGIN
+	POS= -3.59 2.17 -37.21
+	ROT= 0.00 0.00 0.00
+	TYPE= 0
+
+	PATHPOINT_LIST_BEGIN
+
+		POINT_BEGIN
+			POS= -3.59 4.17 -37.21
+			WAITTIME= 0
+		POINT_END
+
+		POINT_BEGIN
+			POS= -3.59 4.17 -37.21
+			WAITTIME= 0
+		POINT_END
+
+		POINT_BEGIN
+			POS= -5.52 3.08 -58.37
+			WAITTIME= 0
+		POINT_END
+
+		POINT_BEGIN
+			POS= 18.52 4.40 -58.92
+			WAITTIME= 0
+		POINT_END
+
+		POINT_BEGIN
+			POS= 18.86 6.47 -16.76
+			WAITTIME= 0
+		POINT_END
+
+		POINT_BEGIN
+			POS= 36.76 4.46 -17.75
+			WAITTIME= 0
+		POINT_END
+
+		POINT_BEGIN
+			POS= 36.12 4.40 -61.70
+			WAITTIME= 0
+		POINT_END
+
+	PATHPOINT_LIST_END
+ENEMY_END
+
+#-----------------------------------------
+#å¢
+#-----------------------------------------
+ENEMY_BEGIN
+	POS= 26.07 5.48 -7.44
+	ROT= 0.00 0.00 0.00
+	TYPE= 0
+
+	PATHPOINT_LIST_BEGIN
+
+		POINT_BEGIN
+			POS= 26.07 7.48 -7.44
+			WAITTIME= 0
+		POINT_END
+
+		POINT_BEGIN
+			POS= 26.07 7.48 -7.44
+			WAITTIME= 0
+		POINT_END
+
+		POINT_BEGIN
+			POS= 26.07 7.48 -7.44
+			WAITTIME= 0
+		POINT_END
+
+		POINT_BEGIN
+			POS= 26.07 7.48 -7.44
+			WAITTIME= 0
+		POINT_END
+
+		POINT_BEGIN
+			POS= 26.07 7.48 -7.44
+			WAITTIME= 0
+		POINT_END
+
+		POINT_BEGIN
+			POS= -4.20 8.82 -1.05
+			WAITTIME= 0
+		POINT_END
+
+		POINT_BEGIN
+			POS= -6.64 4.27 -29.70
+			WAITTIME= 0
+		POINT_END
+
+		POINT_BEGIN
+			POS= 13.56 6.45 -16.55
+			WAITTIME= 0
+		POINT_END
+
+	PATHPOINT_LIST_END
+ENEMY_END
+

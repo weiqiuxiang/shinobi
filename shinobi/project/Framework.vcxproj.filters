@@ -1,0 +1,949 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="リソース ファイル">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="imgui">
+      <UniqueIdentifier>{91952cf3-eeec-4845-af80-9ebb84767c19}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceFile">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="SourceFile\CScene">
+      <UniqueIdentifier>{e89b9508-23da-4f74-891a-4b71d82c844b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceFile\CScene\CCamera">
+      <UniqueIdentifier>{759b90ec-91be-421b-8d5e-849cc55866f1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceFile\CScene\CScene3D">
+      <UniqueIdentifier>{acda4e4a-572a-4621-b9c3-c9ba7932c2be}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceFile\CScene\Light">
+      <UniqueIdentifier>{9ccdd355-45e2-4f42-8ee8-2bddfae99e36}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceFile\CScene\MeshField">
+      <UniqueIdentifier>{485b9f63-254f-44e5-85ae-2245b0cf8cfe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceFile\CScene\Factory">
+      <UniqueIdentifier>{a73fa938-b87b-4626-be14-e93a9f999a9a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceFile\ModelManager">
+      <UniqueIdentifier>{6a103838-3e0a-4ba7-9064-fadf0672f7e7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceFile\TextureManager">
+      <UniqueIdentifier>{5bf7ec4d-508a-4d0a-b52d-130645db4863}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceFile\specialHeader">
+      <UniqueIdentifier>{938758f5-4e27-4504-8f2d-7196d1586d8f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceFile\inputDevice">
+      <UniqueIdentifier>{d3e47811-b8ec-4d7c-8dc6-7839c8a94742}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceFile\SceneTransition">
+      <UniqueIdentifier>{6253f736-876f-4e28-b0f4-efac43ac4c5d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceFile\SceneTransition\scene">
+      <UniqueIdentifier>{b2d962f5-ff97-43f3-94ef-e6cdeb74f045}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceFile\ObjectStorage">
+      <UniqueIdentifier>{23ce8498-f829-470d-bb5f-d3b5a1f76ea9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceFile\specialClass">
+      <UniqueIdentifier>{0b8e9b2f-a595-4c73-9940-b8c4e95cdffa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceFile\GameObject">
+      <UniqueIdentifier>{a9039ebe-ff14-40c7-be64-712561750963}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceFile\GameObject\Enemy">
+      <UniqueIdentifier>{e6a1a97d-21ba-420c-baed-3589856bd95e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceFile\GameObject\player">
+      <UniqueIdentifier>{2feac14b-f743-4170-aa8b-b90977198274}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceFile\math">
+      <UniqueIdentifier>{debdf20a-1c20-4f33-b86e-40cb73edbb52}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceFile\motion">
+      <UniqueIdentifier>{12641f34-e6d8-46d0-8da3-17ef225a334c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceFile\Debug">
+      <UniqueIdentifier>{642ffa82-d530-4a6f-87ac-2aa2de2b6e35}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceFile\Collision">
+      <UniqueIdentifier>{9efbb677-c377-4be0-b2d8-fdb5a21f396d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceFile\CEditor">
+      <UniqueIdentifier>{a2844123-e2f9-4c6f-bf59-5d809b93b737}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceFile\CEditor\CMapEditor">
+      <UniqueIdentifier>{5060fea1-5acb-4dc6-81a1-3aa3dbd55378}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceFile\CEditor\CMotionEditor">
+      <UniqueIdentifier>{2ed531ed-6635-4b84-b336-05cf0b9ab985}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceFile\CTitle">
+      <UniqueIdentifier>{d03f21dc-1cd2-48e6-bafc-c389daf3716d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceFile\CGame">
+      <UniqueIdentifier>{da3bd914-cab9-4c3f-94c8-37e098ccf4a6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceFile\UI2D">
+      <UniqueIdentifier>{a29099da-59d5-4dba-a547-2b27cc5f492b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceFile\bgmAndSE">
+      <UniqueIdentifier>{efa4255e-2a2a-445c-a6f7-8166a5cbcdd3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceFile\System">
+      <UniqueIdentifier>{d7617bd8-53c5-4fe0-b624-8869312fde45}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceFile\GameObject\player\playerStatePattern">
+      <UniqueIdentifier>{857f944b-1756-4175-b6f5-f93667a03191}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceFile\GameObject\player\PatternManager">
+      <UniqueIdentifier>{ba68850d-9bf4-4daf-9706-ac035c84c5b0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceFile\GameObject\Enemy\StateManager">
+      <UniqueIdentifier>{eecd13bf-5a29-4bf6-af7f-5b2396904d87}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceFile\GameObject\Enemy\EnemyDogState">
+      <UniqueIdentifier>{5028ec76-d908-461b-8c9a-ba3c250907b2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceFile\GameObject\Enemy\CEnemyState">
+      <UniqueIdentifier>{27ce095f-2218-44a1-8b64-65ee1d37b221}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ShaderCord">
+      <UniqueIdentifier>{38d0d851-b3ce-4b82-b517-bd69427655ac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceFile\CEditor\CMapEditor\LevelDesignPart">
+      <UniqueIdentifier>{9a475c9d-16d9-4467-985a-910104904c27}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SourceFile\GameObject\NavMesh">
+      <UniqueIdentifier>{bc7953be-815d-4b1f-969a-7f001438ceb1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="SourceFile\bgmAndSE\sound.cpp">
+      <Filter>SourceFile\bgmAndSE</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceFile\CEditor\CMotionEditor\CMotionEditor.cpp">
+      <Filter>SourceFile\CEditor\CMotionEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceFile\CEditor\CMapEditor\C_Obj3D_DataIO.cpp">
+      <Filter>SourceFile\CEditor\CMapEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceFile\CEditor\CMapEditor\CMeshDataIO.cpp">
+      <Filter>SourceFile\CEditor\CMapEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceFile\CGame\CGame.cpp">
+      <Filter>SourceFile\CGame</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceFile\CGame\CGameUI.cpp">
+      <Filter>SourceFile\CGame</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceFile\Collision\CAllObj3DHitMesh.cpp">
+      <Filter>SourceFile\Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceFile\Collision\CCollisionCircle.cpp">
+      <Filter>SourceFile\Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceFile\Collision\CCollisionJudge.cpp">
+      <Filter>SourceFile\Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceFile\Collision\CCollisionMath.cpp">
+      <Filter>SourceFile\Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceFile\Collision\CCollisionPlayerAndEnemy.cpp">
+      <Filter>SourceFile\Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceFile\CScene\CCamera\CCamera.cpp">
+      <Filter>SourceFile\CScene\CCamera</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceFile\CScene\CCamera\CCameraManager.cpp">
+      <Filter>SourceFile\CScene\CCamera</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceFile\CScene\CScene3D\CScene3D.cpp">
+      <Filter>SourceFile\CScene\CScene3D</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceFile\CScene\CScene3D\CScene3D_Draw.cpp">
+      <Filter>SourceFile\CScene\CScene3D</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceFile\CScene\Light\CLight.cpp">
+      <Filter>SourceFile\CScene\Light</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceFile\CScene\Light\CLightManager.cpp">
+      <Filter>SourceFile\CScene\Light</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceFile\CScene\MeshField\CMeshField.cpp">
+      <Filter>SourceFile\CScene\MeshField</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceFile\CScene\MeshField\CMeshFieldManager.cpp">
+      <Filter>SourceFile\CScene\MeshField</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceFile\CScene\CModel.cpp">
+      <Filter>SourceFile\CScene</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceFile\CScene\CScene.cpp">
+      <Filter>SourceFile\CScene</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceFile\CScene\CScene2D.cpp">
+      <Filter>SourceFile\CScene</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceFile\CScene\CScene2DIndex.cpp">
+      <Filter>SourceFile\CScene</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceFile\CScene\CSkyDome.cpp">
+      <Filter>SourceFile\CScene</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceFile\CTitle\CTitle.cpp">
+      <Filter>SourceFile\CTitle</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceFile\Debug\CDebug.cpp">
+      <Filter>SourceFile\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceFile\Debug\CShowDebugFlag.cpp">
+      <Filter>SourceFile\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceFile\GameMaster\CRenderer.cpp">
+      <Filter>SourceFile\System</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceFile\GameObject\Enemy\CEnemy.cpp">
+      <Filter>SourceFile\GameObject\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceFile\GameObject\Enemy\CEnemyControl.cpp">
+      <Filter>SourceFile\GameObject\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceFile\GameObject\Enemy\CEnemyStorage.cpp">
+      <Filter>SourceFile\GameObject\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceFile\GameObject\Enemy\CPathBall.cpp">
+      <Filter>SourceFile\GameObject\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceFile\GameObject\Enemy\CPathPoint.cpp">
+      <Filter>SourceFile\GameObject\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceFile\GameObject\player\CLinkPlayerToUI.cpp">
+      <Filter>SourceFile\GameObject\player</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceFile\GameObject\player\CLockOnEF.cpp">
+      <Filter>SourceFile\GameObject\player</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceFile\GameObject\player\CLockOnEnemy.cpp">
+      <Filter>SourceFile\GameObject\player</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceFile\GameObject\player\CPlayer.cpp">
+      <Filter>SourceFile\GameObject\player</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceFile\GameObject\player\CPlayerControl.cpp">
+      <Filter>SourceFile\GameObject\player</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceFile\GameObject\CFog.cpp">
+      <Filter>SourceFile\GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceFile\GameObject\CHuman.cpp">
+      <Filter>SourceFile\GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceFile\GameObject\CWeapon.cpp">
+      <Filter>SourceFile\GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceFile\InputDevice\input.cpp">
+      <Filter>SourceFile\inputDevice</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceFile\InputDevice\inputmouse.cpp">
+      <Filter>SourceFile\inputDevice</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceFile\InputDevice\MousePosition.cpp">
+      <Filter>SourceFile\inputDevice</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceFile\InputDevice\XInputControl.cpp">
+      <Filter>SourceFile\inputDevice</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceFile\math\CPolygonMath.cpp">
+      <Filter>SourceFile\math</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceFile\math\CTextLoad.cpp">
+      <Filter>SourceFile\math</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceFile\math\CVectorMath.cpp">
+      <Filter>SourceFile\math</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceFile\math\raypicktomesh.cpp">
+      <Filter>SourceFile\math</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceFile\ModelManager\ModelManager.cpp">
+      <Filter>SourceFile\ModelManager</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceFile\ModelManager\ModelObj.cpp">
+      <Filter>SourceFile\ModelManager</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceFile\Motion\CEditorMotion.cpp">
+      <Filter>SourceFile\motion</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceFile\Motion\CModelMotion.cpp">
+      <Filter>SourceFile\motion</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceFile\Motion\CMotion.cpp">
+      <Filter>SourceFile\motion</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceFile\Motion\CPart.cpp">
+      <Filter>SourceFile\motion</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceFile\ObjectStorage\CModelStorage.cpp">
+      <Filter>SourceFile\ObjectStorage</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceFile\ObjectStorage\CScene2DStorage.cpp">
+      <Filter>SourceFile\ObjectStorage</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceFile\ObjectStorage\CScene3DStorage.cpp">
+      <Filter>SourceFile\ObjectStorage</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceFile\SceneTransition\scene\CResult.cpp">
+      <Filter>SourceFile\SceneTransition\scene</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceFile\SceneTransition\scene\CTutorial.cpp">
+      <Filter>SourceFile\SceneTransition\scene</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceFile\SceneTransition\SceneManager.cpp">
+      <Filter>SourceFile\SceneTransition</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceFile\SceneTransition\SceneTransition.cpp">
+      <Filter>SourceFile\SceneTransition</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceFile\specialClass\CINDEX_SIZE.cpp">
+      <Filter>SourceFile\specialClass</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceFile\TextureManager\Tex.cpp">
+      <Filter>SourceFile\TextureManager</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceFile\TextureManager\TexManager.cpp">
+      <Filter>SourceFile\TextureManager</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceFile\UI2D\CFontUIScale.cpp">
+      <Filter>SourceFile\UI2D</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceFile\main.cpp">
+      <Filter>SourceFile</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceFile\GameObject\CAfterimageEffect.cpp">
+      <Filter>SourceFile\GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceFile\GameObject\CStencilShadow.cpp">
+      <Filter>SourceFile\GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceFile\GameObject\CRenderTarget2D.cpp">
+      <Filter>SourceFile\GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceFile\GameObject\player\CCharacterCamera.cpp">
+      <Filter>SourceFile\GameObject\player</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceFile\CEditor\CCoordinate.cpp">
+      <Filter>SourceFile\CEditor\CMapEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceFile\CEditor\CHermitian.cpp">
+      <Filter>SourceFile\CEditor\CMotionEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceFile\CEditor\CMapEditor\CMouseEditMeshField.cpp">
+      <Filter>SourceFile\CEditor\CMapEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceFile\GameObject\player\playerStatePattern\CPlayerNeutralPattern.cpp">
+      <Filter>SourceFile\GameObject\player\playerStatePattern</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceFile\GameObject\player\playerStatePattern\CPlayerAttack01Pattern.cpp">
+      <Filter>SourceFile\GameObject\player\playerStatePattern</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceFile\GameObject\player\playerStatePattern\CPlayerAttack02Pattern.cpp">
+      <Filter>SourceFile\GameObject\player\playerStatePattern</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceFile\GameObject\player\playerStatePattern\CPlayerAttack03Pattern.cpp">
+      <Filter>SourceFile\GameObject\player\playerStatePattern</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceFile\GameObject\player\playerStatePattern\CPlayerAttack04Pattern.cpp">
+      <Filter>SourceFile\GameObject\player\playerStatePattern</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceFile\GameObject\player\PatternManager\CPlayerPatternManager.cpp">
+      <Filter>SourceFile\GameObject\player\PatternManager</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceFile\GameObject\player\playerStatePattern\CPlayerRollingPattern.cpp">
+      <Filter>SourceFile\GameObject\player\playerStatePattern</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceFile\GameObject\player\playerStatePattern\CPlayerStepPattern.cpp">
+      <Filter>SourceFile\GameObject\player\playerStatePattern</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceFile\GameObject\player\playerStatePattern\CPlayerPattern.cpp">
+      <Filter>SourceFile\GameObject\player\playerStatePattern</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceFile\GameObject\player\playerStatePattern\CPlayerChangeWeaponShapePattern.cpp">
+      <Filter>SourceFile\GameObject\player\playerStatePattern</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceFile\GameObject\Enemy\EnemyDogState\CEnemyDogBiteAttackState.cpp">
+      <Filter>SourceFile\GameObject\Enemy\EnemyDogState</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceFile\GameObject\Enemy\EnemyDogState\CEnemyDogJumpAttackState.cpp">
+      <Filter>SourceFile\GameObject\Enemy\EnemyDogState</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceFile\GameObject\Enemy\EnemyDogState\CEnemyDogPatrolState.cpp">
+      <Filter>SourceFile\GameObject\Enemy\EnemyDogState</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceFile\GameObject\Enemy\EnemyDogState\CEnemyDogRunState.cpp">
+      <Filter>SourceFile\GameObject\Enemy\EnemyDogState</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceFile\GameObject\Enemy\EnemyDogState\CEnemyDogWaitState.cpp">
+      <Filter>SourceFile\GameObject\Enemy\EnemyDogState</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceFile\GameObject\Enemy\EnemyDogState\CEnemyDogWalkState.cpp">
+      <Filter>SourceFile\GameObject\Enemy\EnemyDogState</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceFile\GameObject\Enemy\EnemyDogState\CEnemyDogStunState.cpp">
+      <Filter>SourceFile\GameObject\Enemy\EnemyDogState</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceFile\GameObject\Enemy\EnemyDogState\CEnemyDogDeadState.cpp">
+      <Filter>SourceFile\GameObject\Enemy\EnemyDogState</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceFile\GameObject\Enemy\EnemyDogState\CEnemyDogTopState.cpp">
+      <Filter>SourceFile\GameObject\Enemy\EnemyDogState</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceFile\GameObject\Enemy\EnemyDogState\CEnemyDogAttackModeState.cpp">
+      <Filter>SourceFile\GameObject\Enemy\EnemyDogState</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceFile\GameObject\Enemy\EnemyDogState\CEnemyDogRorateToPlayerState.cpp">
+      <Filter>SourceFile\GameObject\Enemy\EnemyDogState</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceFile\GameObject\Enemy\StateManager\CEnemyDogStateManager.cpp">
+      <Filter>SourceFile\GameObject\Enemy\StateManager</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceFile\CShaderManager.cpp">
+      <Filter>SourceFile</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceFile\GameObject\CDepthRenderTarget.cpp">
+      <Filter>SourceFile\GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceFile\CScene\CCamera\CCameraLight.cpp">
+      <Filter>SourceFile\CScene\CCamera</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceFile\ObjectStorage\CLifeGaugeStorage.cpp">
+      <Filter>SourceFile\ObjectStorage</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceFile\GameObject\Enemy\CLifeGauge.cpp">
+      <Filter>SourceFile\GameObject\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceFile\GameObject\CBlood.cpp">
+      <Filter>SourceFile\GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceFile\GameObject\CBloodStorage.cpp">
+      <Filter>SourceFile\GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceFile\GameObject\Enemy\EnemyDogState\CEnemyDogAttackRecoveryState.cpp">
+      <Filter>SourceFile\GameObject\Enemy\EnemyDogState</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceFile\Collision\CCollisionPlayerAndModel.cpp">
+      <Filter>SourceFile\Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceFile\Collision\CCollisionEnemyAndModel.cpp">
+      <Filter>SourceFile\Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceFile\GameObject\player\playerStatePattern\CPlayerStunPattern.cpp">
+      <Filter>SourceFile\GameObject\player\playerStatePattern</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceFile\GameObject\player\playerStatePattern\CPlayerDeadPattern.cpp">
+      <Filter>SourceFile\GameObject\player\playerStatePattern</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceFile\CEditor\CMapEditor\CMouseWindow.cpp">
+      <Filter>SourceFile\CEditor\CMapEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceFile\CEditor\CMapEditor\CSelectMoreObj.cpp">
+      <Filter>SourceFile\CEditor\CMapEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceFile\CEditor\CMapEditor\LevelDesignPart\CCreatureDataIO.cpp">
+      <Filter>SourceFile\CEditor\CMapEditor\LevelDesignPart</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceFile\CEditor\CMapEditor\CObjectAndMeshEditorUI.cpp">
+      <Filter>SourceFile\CEditor\CMapEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceFile\CEditor\CMapEditor\CMapEditor.cpp">
+      <Filter>SourceFile\CEditor\CMapEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceFile\CEditor\CMapEditor\LevelDesignPart\CLevelDesignUI.cpp">
+      <Filter>SourceFile\CEditor\CMapEditor\LevelDesignPart</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceFile\CEditor\CMapEditor\CObjectAndMeshEditor.cpp">
+      <Filter>SourceFile\CEditor\CMapEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceFile\CEditor\CMapEditor\LevelDesignPart\CLevelDesignEditor.cpp">
+      <Filter>SourceFile\CEditor\CMapEditor\LevelDesignPart</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceFile\GameObject\CCube.cpp">
+      <Filter>SourceFile\GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceFile\GameObject\NavMesh\CNavMesh.cpp">
+      <Filter>SourceFile\GameObject\NavMesh</Filter>
+    </ClCompile>
+    <ClCompile Include="SourceFile\GameObject\NavMesh\CNavMeshManager.cpp">
+      <Filter>SourceFile\GameObject\NavMesh</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui-master\imgui.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui-master\imgui_demo.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui-master\imgui_draw.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui-master\examples\directx9_example\imgui_impl_dx9.cpp">
+      <Filter>imgui</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="SourceFile\bgmAndSE\sound.h">
+      <Filter>SourceFile\bgmAndSE</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceFile\bgmAndSE\SoundPassHeader.h">
+      <Filter>SourceFile\bgmAndSE</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceFile\CEditor\CMotionEditor\CMotionEditor.h">
+      <Filter>SourceFile\CEditor\CMotionEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceFile\CEditor\CMapEditor\C_Obj3D_DataIO.h">
+      <Filter>SourceFile\CEditor\CMapEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceFile\CEditor\CMapEditor\CMeshDataIO.h">
+      <Filter>SourceFile\CEditor\CMapEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceFile\CGame\CGame.h">
+      <Filter>SourceFile\CGame</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceFile\CGame\CGameUI.h">
+      <Filter>SourceFile\CGame</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceFile\Collision\CAllObj3DHitMesh.h">
+      <Filter>SourceFile\Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceFile\Collision\CCollisionCircle.h">
+      <Filter>SourceFile\Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceFile\Collision\CCollisionJudge.h">
+      <Filter>SourceFile\Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceFile\Collision\CCollisionMath.h">
+      <Filter>SourceFile\Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceFile\Collision\CCollisionPlayerAndEnemy.h">
+      <Filter>SourceFile\Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceFile\CScene\CCamera\CCamera.h">
+      <Filter>SourceFile\CScene\CCamera</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceFile\CScene\CCamera\CCameraManager.h">
+      <Filter>SourceFile\CScene\CCamera</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceFile\CScene\CScene3D\CScene3D.h">
+      <Filter>SourceFile\CScene\CScene3D</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceFile\CScene\CScene3D\CScene3D_Draw.h">
+      <Filter>SourceFile\CScene\CScene3D</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceFile\CScene\Factory\CModelFactory.h">
+      <Filter>SourceFile\CScene\Factory</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceFile\CScene\Factory\CScene3DFactory.h">
+      <Filter>SourceFile\CScene\Factory</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceFile\CScene\Light\CLight.h">
+      <Filter>SourceFile\CScene\Light</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceFile\CScene\Light\CLightManager.h">
+      <Filter>SourceFile\CScene\Light</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceFile\CScene\MeshField\CMeshField.h">
+      <Filter>SourceFile\CScene\MeshField</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceFile\CScene\MeshField\CMeshFieldManager.h">
+      <Filter>SourceFile\CScene\MeshField</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceFile\CScene\CModel.h">
+      <Filter>SourceFile\CScene</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceFile\CScene\CScene.h">
+      <Filter>SourceFile\CScene</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceFile\CScene\CScene2D.h">
+      <Filter>SourceFile\CScene</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceFile\CScene\CScene2DIndex.h">
+      <Filter>SourceFile\CScene</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceFile\CScene\CSkyDome.h">
+      <Filter>SourceFile\CScene</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceFile\CTitle\CTitle.h">
+      <Filter>SourceFile\CTitle</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceFile\Debug\CDebug.h">
+      <Filter>SourceFile\Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceFile\Debug\CShowDebugFlag.h">
+      <Filter>SourceFile\Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceFile\GameMaster\CRenderer.h">
+      <Filter>SourceFile\System</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceFile\GameObject\Enemy\CEnemy.h">
+      <Filter>SourceFile\GameObject\Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceFile\GameObject\Enemy\CEnemyControl.h">
+      <Filter>SourceFile\GameObject\Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceFile\GameObject\Enemy\CEnemyStorage.h">
+      <Filter>SourceFile\GameObject\Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceFile\GameObject\Enemy\CPathBall.h">
+      <Filter>SourceFile\GameObject\Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceFile\GameObject\Enemy\CPathPoint.h">
+      <Filter>SourceFile\GameObject\Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceFile\GameObject\player\CLinkPlayerToUI.h">
+      <Filter>SourceFile\GameObject\player</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceFile\GameObject\player\CLockOnEF.h">
+      <Filter>SourceFile\GameObject\player</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceFile\GameObject\player\CLockOnEnemy.h">
+      <Filter>SourceFile\GameObject\player</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceFile\GameObject\player\CPlayer.h">
+      <Filter>SourceFile\GameObject\player</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceFile\GameObject\player\CPlayerControl.h">
+      <Filter>SourceFile\GameObject\player</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceFile\GameObject\CFog.h">
+      <Filter>SourceFile\GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceFile\GameObject\CHuman.h">
+      <Filter>SourceFile\GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceFile\GameObject\CWeapon.h">
+      <Filter>SourceFile\GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceFile\InputDevice\input.h">
+      <Filter>SourceFile\inputDevice</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceFile\InputDevice\inputmouse.h">
+      <Filter>SourceFile\inputDevice</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceFile\InputDevice\MousePosition.h">
+      <Filter>SourceFile\inputDevice</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceFile\InputDevice\XInputControl.h">
+      <Filter>SourceFile\inputDevice</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceFile\math\CPolygonMath.h">
+      <Filter>SourceFile\math</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceFile\math\CTextLoad.h">
+      <Filter>SourceFile\math</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceFile\math\CVectorMath.h">
+      <Filter>SourceFile\math</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceFile\math\raypicktomesh.h">
+      <Filter>SourceFile\math</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceFile\ModelManager\ModelManager.h">
+      <Filter>SourceFile\ModelManager</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceFile\ModelManager\ModelObj.h">
+      <Filter>SourceFile\ModelManager</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceFile\Motion\CEditorMotion.h">
+      <Filter>SourceFile\motion</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceFile\Motion\CModelMotion.h">
+      <Filter>SourceFile\motion</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceFile\Motion\CMotion.h">
+      <Filter>SourceFile\motion</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceFile\Motion\CPart.h">
+      <Filter>SourceFile\motion</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceFile\ObjectStorage\CModelStorage.h">
+      <Filter>SourceFile\ObjectStorage</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceFile\ObjectStorage\CScene2DStorage.h">
+      <Filter>SourceFile\ObjectStorage</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceFile\ObjectStorage\CScene3DStorage.h">
+      <Filter>SourceFile\ObjectStorage</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceFile\SceneTransition\scene\CResult.h">
+      <Filter>SourceFile\SceneTransition\scene</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceFile\SceneTransition\scene\CTutorial.h">
+      <Filter>SourceFile\SceneTransition\scene</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceFile\SceneTransition\SceneManager.h">
+      <Filter>SourceFile\SceneTransition</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceFile\SceneTransition\SceneTransition.h">
+      <Filter>SourceFile\SceneTransition</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceFile\specialClass\CINDEX_SIZE.h">
+      <Filter>SourceFile\specialClass</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceFile\specialHeader\ModelPassHeader.h">
+      <Filter>SourceFile\specialHeader</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceFile\specialHeader\namespaceHeader.h">
+      <Filter>SourceFile\specialHeader</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceFile\specialHeader\structHeader.h">
+      <Filter>SourceFile\specialHeader</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceFile\specialHeader\TexPassHead.h">
+      <Filter>SourceFile\specialHeader</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceFile\specialHeader\TextFilePass.h">
+      <Filter>SourceFile\specialHeader</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceFile\specialHeader\typedefHead01.h">
+      <Filter>SourceFile\specialHeader</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceFile\TextureManager\Tex.h">
+      <Filter>SourceFile\TextureManager</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceFile\TextureManager\TexManager.h">
+      <Filter>SourceFile\TextureManager</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceFile\UI2D\CFontUIScale.h">
+      <Filter>SourceFile\UI2D</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceFile\UI2D\CFontUIScaleFactory.h">
+      <Filter>SourceFile\UI2D</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceFile\main.h">
+      <Filter>SourceFile</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceFile\GameObject\CAfterimageEffect.h">
+      <Filter>SourceFile\GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceFile\GameObject\CStencilShadow.h">
+      <Filter>SourceFile\GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceFile\GameObject\CRenderTarget2D.h">
+      <Filter>SourceFile\GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceFile\GameObject\player\CCharacterCamera.h">
+      <Filter>SourceFile\GameObject\player</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceFile\CEditor\CCoordinate.h">
+      <Filter>SourceFile\CEditor\CMapEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceFile\CEditor\CHermitian.h">
+      <Filter>SourceFile\CEditor\CMotionEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceFile\CEditor\CMapEditor\CMouseEditMeshField.h">
+      <Filter>SourceFile\CEditor\CMapEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceFile\GameObject\player\playerStatePattern\CPlayerNeutralPattern.h">
+      <Filter>SourceFile\GameObject\player\playerStatePattern</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceFile\GameObject\player\playerStatePattern\CPlayerPattern.h">
+      <Filter>SourceFile\GameObject\player\playerStatePattern</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceFile\GameObject\player\playerStatePattern\CPlayerAttack01Pattern.h">
+      <Filter>SourceFile\GameObject\player\playerStatePattern</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceFile\GameObject\player\playerStatePattern\CPlayerAttack02Pattern.h">
+      <Filter>SourceFile\GameObject\player\playerStatePattern</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceFile\GameObject\player\playerStatePattern\CPlayerAttack03Pattern.h">
+      <Filter>SourceFile\GameObject\player\playerStatePattern</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceFile\GameObject\player\playerStatePattern\CPlayerAttack04Pattern.h">
+      <Filter>SourceFile\GameObject\player\playerStatePattern</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceFile\GameObject\player\PatternManager\CPlayerPatternManager.h">
+      <Filter>SourceFile\GameObject\player\PatternManager</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceFile\GameObject\player\playerStatePattern\CPlayerRollingPattern.h">
+      <Filter>SourceFile\GameObject\player\playerStatePattern</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceFile\GameObject\player\playerStatePattern\CPlayerStepPattern.h">
+      <Filter>SourceFile\GameObject\player\playerStatePattern</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceFile\GameObject\player\playerStatePattern\CPlayerChangeWeaponShapePattern.h">
+      <Filter>SourceFile\GameObject\player\playerStatePattern</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceFile\GameObject\Enemy\StateManager\CEnemyStateManager.h">
+      <Filter>SourceFile\GameObject\Enemy\StateManager</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceFile\GameObject\Enemy\EnemyDogState\CEnemyDogBiteAttackState.h">
+      <Filter>SourceFile\GameObject\Enemy\EnemyDogState</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceFile\GameObject\Enemy\EnemyDogState\CEnemyDogJumpAttackState.h">
+      <Filter>SourceFile\GameObject\Enemy\EnemyDogState</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceFile\GameObject\Enemy\EnemyDogState\CEnemyDogPatrolState.h">
+      <Filter>SourceFile\GameObject\Enemy\EnemyDogState</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceFile\GameObject\Enemy\EnemyDogState\CEnemyDogRunState.h">
+      <Filter>SourceFile\GameObject\Enemy\EnemyDogState</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceFile\GameObject\Enemy\EnemyDogState\CEnemyDogWaitState.h">
+      <Filter>SourceFile\GameObject\Enemy\EnemyDogState</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceFile\GameObject\Enemy\EnemyDogState\CEnemyDogWalkState.h">
+      <Filter>SourceFile\GameObject\Enemy\EnemyDogState</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceFile\GameObject\Enemy\EnemyDogState\CEnemyDogStunState.h">
+      <Filter>SourceFile\GameObject\Enemy\EnemyDogState</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceFile\GameObject\Enemy\EnemyDogState\CEnemyDogDeadState.h">
+      <Filter>SourceFile\GameObject\Enemy\EnemyDogState</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceFile\GameObject\Enemy\EnemyDogState\CEnemyDogTopState.h">
+      <Filter>SourceFile\GameObject\Enemy\EnemyDogState</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceFile\GameObject\Enemy\CEnemyState.h">
+      <Filter>SourceFile\GameObject\Enemy\CEnemyState</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceFile\GameObject\Enemy\EnemyDogState\CEnemyDogAttackModeState.h">
+      <Filter>SourceFile\GameObject\Enemy\EnemyDogState</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceFile\GameObject\Enemy\EnemyDogState\CEnemyDogRorateToPlayerState.h">
+      <Filter>SourceFile\GameObject\Enemy\EnemyDogState</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceFile\common.h">
+      <Filter>SourceFile</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceFile\GameObject\Enemy\StateManager\CEnemyDogStateManager.h">
+      <Filter>SourceFile\GameObject\Enemy\StateManager</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceFile\CShaderManager.h">
+      <Filter>SourceFile</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceFile\GameObject\CDepthRenderTarget.h">
+      <Filter>SourceFile\GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceFile\CScene\CCamera\CCameraLight.h">
+      <Filter>SourceFile\CScene\CCamera</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceFile\ObjectStorage\CLifeGaugeStorage.h">
+      <Filter>SourceFile\ObjectStorage</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceFile\GameObject\Enemy\CLifeGauge.h">
+      <Filter>SourceFile\GameObject\Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceFile\GameObject\CBlood.h">
+      <Filter>SourceFile\GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceFile\GameObject\CBloodStorage.h">
+      <Filter>SourceFile\GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceFile\GameObject\Enemy\EnemyDogState\CEnemyDogAttackRecoveryState.h">
+      <Filter>SourceFile\GameObject\Enemy\EnemyDogState</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceFile\Collision\CCollisionPlayerAndModel.h">
+      <Filter>SourceFile\Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceFile\Collision\CCollisionEnemyAndModel.h">
+      <Filter>SourceFile\Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceFile\GameObject\player\playerStatePattern\CPlayerStunPattern.h">
+      <Filter>SourceFile\GameObject\player\playerStatePattern</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceFile\GameObject\player\playerStatePattern\CPlayerDeadPattern.h">
+      <Filter>SourceFile\GameObject\player\playerStatePattern</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceFile\CEditor\CMapEditor\CMouseWindow.h">
+      <Filter>SourceFile\CEditor\CMapEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceFile\CEditor\CMapEditor\CSelectMoreObj.h">
+      <Filter>SourceFile\CEditor\CMapEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceFile\CEditor\CMapEditor\LevelDesignPart\CCreatureDataIO.h">
+      <Filter>SourceFile\CEditor\CMapEditor\LevelDesignPart</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceFile\CEditor\CMapEditor\CObjectAndMeshEditorUI.h">
+      <Filter>SourceFile\CEditor\CMapEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceFile\CEditor\CMapEditor\CMapEditor.h">
+      <Filter>SourceFile\CEditor\CMapEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceFile\CEditor\CMapEditor\LevelDesignPart\CLevelDesignUI.h">
+      <Filter>SourceFile\CEditor\CMapEditor\LevelDesignPart</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceFile\CEditor\CMapEditor\CObjectAndMeshEditor.h">
+      <Filter>SourceFile\CEditor\CMapEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceFile\CEditor\CMapEditor\LevelDesignPart\CLevelDesignEditor.h">
+      <Filter>SourceFile\CEditor\CMapEditor\LevelDesignPart</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceFile\GameObject\CCube.h">
+      <Filter>SourceFile\GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceFile\GameObject\NavMesh\CNavMesh.h">
+      <Filter>SourceFile\GameObject\NavMesh</Filter>
+    </ClInclude>
+    <ClInclude Include="SourceFile\GameObject\NavMesh\CNavMeshManager.h">
+      <Filter>SourceFile\GameObject\NavMesh</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui-master\imconfig.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui-master\imgui.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui-master\imgui_internal.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui-master\examples\directx9_example\imgui_impl_dx9.h">
+      <Filter>imgui</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="FrameworkEditor.rc">
+      <Filter>リソース ファイル</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="ShaderCode\DepthTexturePS.hlsl">
+      <Filter>ShaderCord</Filter>
+    </FxCompile>
+    <FxCompile Include="ShaderCode\DepthTextureVS.hlsl">
+      <Filter>ShaderCord</Filter>
+    </FxCompile>
+    <FxCompile Include="ShaderCode\SpecularDepthShadowPS.hlsl">
+      <Filter>ShaderCord</Filter>
+    </FxCompile>
+    <FxCompile Include="ShaderCode\SpecularDepthShadowVS.hlsl">
+      <Filter>ShaderCord</Filter>
+    </FxCompile>
+    <FxCompile Include="ShaderCode\BasicPS.hlsl">
+      <Filter>ShaderCord</Filter>
+    </FxCompile>
+    <FxCompile Include="ShaderCode\SpecularPS.hlsl">
+      <Filter>ShaderCord</Filter>
+    </FxCompile>
+    <FxCompile Include="ShaderCode\SpecularVS.hlsl">
+      <Filter>ShaderCord</Filter>
+    </FxCompile>
+    <FxCompile Include="ShaderCode\DeffuseDepthShadowPS.hlsl">
+      <Filter>ShaderCord</Filter>
+    </FxCompile>
+    <FxCompile Include="ShaderCode\DeffuseDepthShadowVS .hlsl">
+      <Filter>ShaderCord</Filter>
+    </FxCompile>
+    <FxCompile Include="ShaderCode\MotionBlurPS.hlsl">
+      <Filter>ShaderCord</Filter>
+    </FxCompile>
+    <FxCompile Include="ShaderCode\MotionBlurVS.hlsl">
+      <Filter>ShaderCord</Filter>
+    </FxCompile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,541 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{4112AC66-92FA-441F-953F-7335F0B4353E}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Framework</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+    <ProjectName>Framework</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(DXSDK_DIR)include;$(SolutionDir)imgui-master;$(SolutionDir)imgui-master/examples/directx9_example;$(IncludePath);$(ProjectDir)SourceFile\bgmAndSE;$(ProjectDir)SourceFile\CEditor;$(ProjectDir)SourceFile\CGame;$(ProjectDir)SourceFile\Collision;$(ProjectDir)SourceFile\CScene;$(ProjectDir)SourceFile\CTitle;$(ProjectDir)SourceFile\Debug;$(ProjectDir)SourceFile\GameMaster;$(ProjectDir)SourceFile\GameObject;$(ProjectDir)SourceFile\InputDevice;$(ProjectDir)SourceFile\math;$(ProjectDir)SourceFile\ModelManager;$(ProjectDir)SourceFile\Motion;$(ProjectDir)SourceFile\ObjectStorage;$(ProjectDir)SourceFile\SceneTransition;$(ProjectDir)SourceFile\specialClass;$(ProjectDir)SourceFile\specialHeader;$(ProjectDir)SourceFile\TextureManager;$(ProjectDir)SourceFile\UI2D;$(ProjectDir)SourceFile\CEditor\CMapEditor;$(ProjectDir)SourceFile\CEditor\CMotionEditor;$(ProjectDir)SourceFile\CScene\CCamera;$(ProjectDir)SourceFile\CScene\CScene3D;$(ProjectDir)SourceFile\CScene\Factory;$(ProjectDir)SourceFile\CScene\Light;$(ProjectDir)SourceFile\CScene\MeshField;$(ProjectDir)SourceFile\GameObject\Enemy;$(ProjectDir)SourceFile\GameObject\particle;$(ProjectDir)SourceFile\GameObject\player;$(ProjectDir)SourceFile\SceneTransition\scene;$(ProjectDir)SourceFile;$(ProjectDir)SourceFile\GameObject\player\playerStatePattern;$(ProjectDir)SourceFile\GameObject\player\PatternManager;$(ProjectDir)SourceFile\GameObject\Enemy\StateManager;$(ProjectDir)SourceFile\GameObject\Enemy\EnemyDogState;$(ProjectDir)SourceFile\CEditor\CMapEditor\LevelDesignPart;$(ProjectDir)SourceFile\GameObject\NavMesh</IncludePath>
+    <LibraryPath>$(DXSDK_DIR)lib\x86;$(LibraryPath)</LibraryPath>
+    <OutDir>$(SolutionDir)</OutDir>
+    <TargetName>$(ProjectName)_DEBUG</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)</OutDir>
+    <TargetName>$(ProjectName)_DEBUG</TargetName>
+    <IncludePath>$(DXSDK_DIR)include;$(SolutionDir)imgui-master;$(SolutionDir)imgui-master/examples/directx9_example;$(IncludePath);$(ProjectDir)SourceFile\bgmAndSE;$(ProjectDir)SourceFile\CEditor;$(ProjectDir)SourceFile\CGame;$(ProjectDir)SourceFile\Collision;$(ProjectDir)SourceFile\CScene;$(ProjectDir)SourceFile\CTitle;$(ProjectDir)SourceFile\Debug;$(ProjectDir)SourceFile\GameMaster;$(ProjectDir)SourceFile\GameObject;$(ProjectDir)SourceFile\InputDevice;$(ProjectDir)SourceFile\math;$(ProjectDir)SourceFile\ModelManager;$(ProjectDir)SourceFile\Motion;$(ProjectDir)SourceFile\ObjectStorage;$(ProjectDir)SourceFile\SceneTransition;$(ProjectDir)SourceFile\specialClass;$(ProjectDir)SourceFile\specialHeader;$(ProjectDir)SourceFile\TextureManager;$(ProjectDir)SourceFile\UI2D;$(ProjectDir)SourceFile\CEditor\CMapEditor;$(ProjectDir)SourceFile\CEditor\CMotionEditor;$(ProjectDir)SourceFile\CScene\CCamera;$(ProjectDir)SourceFile\CScene\CScene3D;$(ProjectDir)SourceFile\CScene\Factory;$(ProjectDir)SourceFile\CScene\Light;$(ProjectDir)SourceFile\CScene\MeshField;$(ProjectDir)SourceFile\GameObject\Enemy;$(ProjectDir)SourceFile\GameObject\particle;$(ProjectDir)SourceFile\GameObject\player;$(ProjectDir)SourceFile\SceneTransition\scene;$(ProjectDir)SourceFile;$(ProjectDir)SourceFile\GameObject\player\playerStatePattern;$(ProjectDir)SourceFile\GameObject\player\PatternManager;$(ProjectDir)SourceFile\GameObject\Enemy\StateManager;$(ProjectDir)SourceFile\GameObject\Enemy\EnemyDogState;$(ProjectDir)SourceFile\CEditor\CMapEditor\LevelDesignPart;$(ProjectDir)SourceFile\GameObject\NavMesh</IncludePath>
+    <LibraryPath>$(DXSDK_DIR)lib\x64;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(DXSDK_DIR)include;$(SolutionDir)imgui-master;$(SolutionDir)imgui-master/examples/directx9_example;$(IncludePath);$(ProjectDir)SourceFile\bgmAndSE;$(ProjectDir)SourceFile\CEditor;$(ProjectDir)SourceFile\CGame;$(ProjectDir)SourceFile\Collision;$(ProjectDir)SourceFile\CScene;$(ProjectDir)SourceFile\CTitle;$(ProjectDir)SourceFile\Debug;$(ProjectDir)SourceFile\GameMaster;$(ProjectDir)SourceFile\GameObject;$(ProjectDir)SourceFile\InputDevice;$(ProjectDir)SourceFile\math;$(ProjectDir)SourceFile\ModelManager;$(ProjectDir)SourceFile\Motion;$(ProjectDir)SourceFile\ObjectStorage;$(ProjectDir)SourceFile\SceneTransition;$(ProjectDir)SourceFile\specialClass;$(ProjectDir)SourceFile\specialHeader;$(ProjectDir)SourceFile\TextureManager;$(ProjectDir)SourceFile\UI2D;$(ProjectDir)SourceFile\CEditor\CMapEditor;$(ProjectDir)SourceFile\CEditor\CMotionEditor;$(ProjectDir)SourceFile\CScene\CCamera;$(ProjectDir)SourceFile\CScene\CScene3D;$(ProjectDir)SourceFile\CScene\Factory;$(ProjectDir)SourceFile\CScene\Light;$(ProjectDir)SourceFile\CScene\MeshField;$(ProjectDir)SourceFile\GameObject\Enemy;$(ProjectDir)SourceFile\GameObject\particle;$(ProjectDir)SourceFile\GameObject\player;$(ProjectDir)SourceFile\SceneTransition\scene;$(ProjectDir)SourceFile;$(ProjectDir)SourceFile\GameObject\player\playerStatePattern;$(ProjectDir)SourceFile\GameObject\player\PatternManager;$(ProjectDir)SourceFile\GameObject\Enemy\StateManager;$(ProjectDir)SourceFile\GameObject\Enemy\EnemyDogState;$(ProjectDir)SourceFile\CEditor\CMapEditor\LevelDesignPart;$(ProjectDir)SourceFile\GameObject\NavMesh</IncludePath>
+    <LibraryPath>$(DXSDK_DIR)lib\x86;$(LibraryPath)</LibraryPath>
+    <OutDir>$(SolutionDir)</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)</OutDir>
+    <IncludePath>$(DXSDK_DIR)include;$(SolutionDir)imgui-master;$(SolutionDir)imgui-master/examples/directx9_example;$(IncludePath);$(ProjectDir)SourceFile\bgmAndSE;$(ProjectDir)SourceFile\CEditor;$(ProjectDir)SourceFile\CGame;$(ProjectDir)SourceFile\Collision;$(ProjectDir)SourceFile\CScene;$(ProjectDir)SourceFile\CTitle;$(ProjectDir)SourceFile\Debug;$(ProjectDir)SourceFile\GameMaster;$(ProjectDir)SourceFile\GameObject;$(ProjectDir)SourceFile\InputDevice;$(ProjectDir)SourceFile\math;$(ProjectDir)SourceFile\ModelManager;$(ProjectDir)SourceFile\Motion;$(ProjectDir)SourceFile\ObjectStorage;$(ProjectDir)SourceFile\SceneTransition;$(ProjectDir)SourceFile\specialClass;$(ProjectDir)SourceFile\specialHeader;$(ProjectDir)SourceFile\TextureManager;$(ProjectDir)SourceFile\UI2D;$(ProjectDir)SourceFile\CEditor\CMapEditor;$(ProjectDir)SourceFile\CEditor\CMotionEditor;$(ProjectDir)SourceFile\CScene\CCamera;$(ProjectDir)SourceFile\CScene\CScene3D;$(ProjectDir)SourceFile\CScene\Factory;$(ProjectDir)SourceFile\CScene\Light;$(ProjectDir)SourceFile\CScene\MeshField;$(ProjectDir)SourceFile\GameObject\Enemy;$(ProjectDir)SourceFile\GameObject\particle;$(ProjectDir)SourceFile\GameObject\player;$(ProjectDir)SourceFile\SceneTransition\scene;$(ProjectDir)SourceFile;$(ProjectDir)SourceFile\GameObject\player\playerStatePattern;$(ProjectDir)SourceFile\GameObject\player\PatternManager;$(ProjectDir)SourceFile\GameObject\Enemy\StateManager;$(ProjectDir)SourceFile\GameObject\Enemy\EnemyDogState;$(ProjectDir)SourceFile\CEditor\CMapEditor\LevelDesignPart;$(ProjectDir)SourceFile\GameObject\NavMesh</IncludePath>
+    <LibraryPath>$(DXSDK_DIR)lib\x64;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="imgui-master\examples\directx9_example\imgui_impl_dx9.cpp" />
+    <ClCompile Include="imgui-master\imgui.cpp" />
+    <ClCompile Include="imgui-master\imgui_demo.cpp" />
+    <ClCompile Include="imgui-master\imgui_draw.cpp" />
+    <ClCompile Include="SourceFile\bgmAndSE\sound.cpp" />
+    <ClCompile Include="SourceFile\CEditor\CCoordinate.cpp" />
+    <ClCompile Include="SourceFile\CEditor\CMapEditor\CMapEditor.cpp" />
+    <ClCompile Include="SourceFile\CEditor\CMapEditor\CObjectAndMeshEditor.cpp" />
+    <ClCompile Include="SourceFile\CEditor\CMapEditor\LevelDesignPart\CLevelDesignEditor.cpp" />
+    <ClCompile Include="SourceFile\CEditor\CMapEditor\LevelDesignPart\CLevelDesignUI.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="SourceFile\CEditor\CHermitian.cpp" />
+    <ClCompile Include="SourceFile\CEditor\CMapEditor\CObjectAndMeshEditorUI.cpp" />
+    <ClCompile Include="SourceFile\CEditor\CMapEditor\CMeshDataIO.cpp" />
+    <ClCompile Include="SourceFile\CEditor\CMapEditor\CMouseEditMeshField.cpp" />
+    <ClCompile Include="SourceFile\CEditor\CMapEditor\CMouseWindow.cpp" />
+    <ClCompile Include="SourceFile\CEditor\CMapEditor\CSelectMoreObj.cpp" />
+    <ClCompile Include="SourceFile\CEditor\CMapEditor\C_Obj3D_DataIO.cpp" />
+    <ClCompile Include="SourceFile\CEditor\CMapEditor\LevelDesignPart\CCreatureDataIO.cpp" />
+    <ClCompile Include="SourceFile\CEditor\CMotionEditor\CMotionEditor.cpp" />
+    <ClCompile Include="SourceFile\CGame\CGame.cpp" />
+    <ClCompile Include="SourceFile\CGame\CGameUI.cpp" />
+    <ClCompile Include="SourceFile\Collision\CAllObj3DHitMesh.cpp" />
+    <ClCompile Include="SourceFile\Collision\CCollisionCircle.cpp" />
+    <ClCompile Include="SourceFile\Collision\CCollisionEnemyAndModel.cpp" />
+    <ClCompile Include="SourceFile\Collision\CCollisionJudge.cpp" />
+    <ClCompile Include="SourceFile\Collision\CCollisionMath.cpp" />
+    <ClCompile Include="SourceFile\Collision\CCollisionPlayerAndEnemy.cpp" />
+    <ClCompile Include="SourceFile\Collision\CCollisionPlayerAndModel.cpp" />
+    <ClCompile Include="SourceFile\CScene\CCamera\CCamera.cpp" />
+    <ClCompile Include="SourceFile\CScene\CCamera\CCameraLight.cpp" />
+    <ClCompile Include="SourceFile\CScene\CCamera\CCameraManager.cpp" />
+    <ClCompile Include="SourceFile\CScene\CModel.cpp" />
+    <ClCompile Include="SourceFile\CScene\CScene.cpp" />
+    <ClCompile Include="SourceFile\CScene\CScene2D.cpp" />
+    <ClCompile Include="SourceFile\CScene\CScene2DIndex.cpp" />
+    <ClCompile Include="SourceFile\CScene\CScene3D\CScene3D.cpp" />
+    <ClCompile Include="SourceFile\CScene\CScene3D\CScene3D_Draw.cpp" />
+    <ClCompile Include="SourceFile\CScene\CSkyDome.cpp" />
+    <ClCompile Include="SourceFile\CScene\Light\CLight.cpp" />
+    <ClCompile Include="SourceFile\CScene\Light\CLightManager.cpp" />
+    <ClCompile Include="SourceFile\CScene\MeshField\CMeshField.cpp" />
+    <ClCompile Include="SourceFile\CScene\MeshField\CMeshFieldManager.cpp" />
+    <ClCompile Include="SourceFile\CTitle\CTitle.cpp" />
+    <ClCompile Include="SourceFile\Debug\CDebug.cpp" />
+    <ClCompile Include="SourceFile\Debug\CShowDebugFlag.cpp" />
+    <ClCompile Include="SourceFile\GameMaster\CRenderer.cpp" />
+    <ClCompile Include="SourceFile\GameObject\CAfterimageEffect.cpp" />
+    <ClCompile Include="SourceFile\GameObject\CBlood.cpp" />
+    <ClCompile Include="SourceFile\GameObject\CBloodStorage.cpp" />
+    <ClCompile Include="SourceFile\GameObject\CCube.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="SourceFile\GameObject\CDepthRenderTarget.cpp" />
+    <ClCompile Include="SourceFile\GameObject\CFog.cpp" />
+    <ClCompile Include="SourceFile\GameObject\CHuman.cpp" />
+    <ClCompile Include="SourceFile\GameObject\CRenderTarget2D.cpp" />
+    <ClCompile Include="SourceFile\GameObject\CStencilShadow.cpp" />
+    <ClCompile Include="SourceFile\GameObject\CWeapon.cpp" />
+    <ClCompile Include="SourceFile\GameObject\Enemy\CEnemy.cpp" />
+    <ClCompile Include="SourceFile\GameObject\Enemy\CEnemyControl.cpp" />
+    <ClCompile Include="SourceFile\GameObject\Enemy\CEnemyStorage.cpp" />
+    <ClCompile Include="SourceFile\GameObject\Enemy\CLifeGauge.cpp" />
+    <ClCompile Include="SourceFile\GameObject\Enemy\CPathBall.cpp" />
+    <ClCompile Include="SourceFile\GameObject\Enemy\CPathPoint.cpp" />
+    <ClCompile Include="SourceFile\GameObject\Enemy\EnemyDogState\CEnemyDogAttackModeState.cpp" />
+    <ClCompile Include="SourceFile\GameObject\Enemy\EnemyDogState\CEnemyDogAttackRecoveryState.cpp" />
+    <ClCompile Include="SourceFile\GameObject\Enemy\EnemyDogState\CEnemyDogBiteAttackState.cpp" />
+    <ClCompile Include="SourceFile\GameObject\Enemy\EnemyDogState\CEnemyDogDeadState.cpp" />
+    <ClCompile Include="SourceFile\GameObject\Enemy\EnemyDogState\CEnemyDogJumpAttackState.cpp" />
+    <ClCompile Include="SourceFile\GameObject\Enemy\EnemyDogState\CEnemyDogPatrolState.cpp" />
+    <ClCompile Include="SourceFile\GameObject\Enemy\EnemyDogState\CEnemyDogRorateToPlayerState.cpp" />
+    <ClCompile Include="SourceFile\GameObject\Enemy\EnemyDogState\CEnemyDogRunState.cpp" />
+    <ClCompile Include="SourceFile\GameObject\Enemy\EnemyDogState\CEnemyDogStunState.cpp" />
+    <ClCompile Include="SourceFile\GameObject\Enemy\EnemyDogState\CEnemyDogTopState.cpp" />
+    <ClCompile Include="SourceFile\GameObject\Enemy\EnemyDogState\CEnemyDogWaitState.cpp" />
+    <ClCompile Include="SourceFile\GameObject\Enemy\EnemyDogState\CEnemyDogWalkState.cpp" />
+    <ClCompile Include="SourceFile\GameObject\Enemy\StateManager\CEnemyDogStateManager.cpp" />
+    <ClCompile Include="SourceFile\GameObject\NavMesh\CNavMesh.cpp" />
+    <ClCompile Include="SourceFile\GameObject\NavMesh\CNavMeshManager.cpp" />
+    <ClCompile Include="SourceFile\GameObject\player\CCharacterCamera.cpp" />
+    <ClCompile Include="SourceFile\GameObject\player\CLinkPlayerToUI.cpp" />
+    <ClCompile Include="SourceFile\GameObject\player\CLockOnEF.cpp" />
+    <ClCompile Include="SourceFile\GameObject\player\CLockOnEnemy.cpp" />
+    <ClCompile Include="SourceFile\GameObject\player\CPlayer.cpp" />
+    <ClCompile Include="SourceFile\GameObject\player\CPlayerControl.cpp" />
+    <ClCompile Include="SourceFile\GameObject\player\PatternManager\CPlayerPatternManager.cpp" />
+    <ClCompile Include="SourceFile\GameObject\player\playerStatePattern\CPlayerAttack01Pattern.cpp" />
+    <ClCompile Include="SourceFile\GameObject\player\playerStatePattern\CPlayerAttack02Pattern.cpp" />
+    <ClCompile Include="SourceFile\GameObject\player\playerStatePattern\CPlayerAttack03Pattern.cpp" />
+    <ClCompile Include="SourceFile\GameObject\player\playerStatePattern\CPlayerAttack04Pattern.cpp" />
+    <ClCompile Include="SourceFile\GameObject\player\playerStatePattern\CPlayerChangeWeaponShapePattern.cpp" />
+    <ClCompile Include="SourceFile\GameObject\player\playerStatePattern\CPlayerDeadPattern.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="SourceFile\GameObject\player\playerStatePattern\CPlayerNeutralPattern.cpp" />
+    <ClCompile Include="SourceFile\GameObject\player\playerStatePattern\CPlayerPattern.cpp" />
+    <ClCompile Include="SourceFile\GameObject\player\playerStatePattern\CPlayerRollingPattern.cpp" />
+    <ClCompile Include="SourceFile\GameObject\player\playerStatePattern\CPlayerStepPattern.cpp" />
+    <ClCompile Include="SourceFile\GameObject\player\playerStatePattern\CPlayerStunPattern.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="SourceFile\InputDevice\input.cpp" />
+    <ClCompile Include="SourceFile\InputDevice\inputmouse.cpp" />
+    <ClCompile Include="SourceFile\InputDevice\MousePosition.cpp" />
+    <ClCompile Include="SourceFile\InputDevice\XInputControl.cpp" />
+    <ClCompile Include="SourceFile\main.cpp" />
+    <ClCompile Include="SourceFile\math\CPolygonMath.cpp" />
+    <ClCompile Include="SourceFile\math\CTextLoad.cpp" />
+    <ClCompile Include="SourceFile\math\CVectorMath.cpp" />
+    <ClCompile Include="SourceFile\math\raypicktomesh.cpp" />
+    <ClCompile Include="SourceFile\ModelManager\ModelManager.cpp" />
+    <ClCompile Include="SourceFile\ModelManager\ModelObj.cpp" />
+    <ClCompile Include="SourceFile\Motion\CEditorMotion.cpp" />
+    <ClCompile Include="SourceFile\Motion\CModelMotion.cpp" />
+    <ClCompile Include="SourceFile\Motion\CMotion.cpp" />
+    <ClCompile Include="SourceFile\Motion\CPart.cpp" />
+    <ClCompile Include="SourceFile\ObjectStorage\CLifeGaugeStorage.cpp" />
+    <ClCompile Include="SourceFile\ObjectStorage\CModelStorage.cpp" />
+    <ClCompile Include="SourceFile\ObjectStorage\CScene2DStorage.cpp" />
+    <ClCompile Include="SourceFile\ObjectStorage\CScene3DStorage.cpp" />
+    <ClCompile Include="SourceFile\SceneTransition\SceneManager.cpp" />
+    <ClCompile Include="SourceFile\SceneTransition\SceneTransition.cpp" />
+    <ClCompile Include="SourceFile\SceneTransition\scene\CResult.cpp" />
+    <ClCompile Include="SourceFile\SceneTransition\scene\CTutorial.cpp" />
+    <ClCompile Include="SourceFile\CShaderManager.cpp" />
+    <ClCompile Include="SourceFile\specialClass\CINDEX_SIZE.cpp" />
+    <ClCompile Include="SourceFile\TextureManager\Tex.cpp" />
+    <ClCompile Include="SourceFile\TextureManager\TexManager.cpp" />
+    <ClCompile Include="SourceFile\UI2D\CFontUIScale.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="imgui-master\examples\directx9_example\imgui_impl_dx9.h" />
+    <ClInclude Include="imgui-master\imconfig.h" />
+    <ClInclude Include="imgui-master\imgui.h" />
+    <ClInclude Include="imgui-master\imgui_internal.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="SourceFile\bgmAndSE\sound.h" />
+    <ClInclude Include="SourceFile\bgmAndSE\SoundPassHeader.h" />
+    <ClInclude Include="SourceFile\CEditor\CCoordinate.h" />
+    <ClInclude Include="SourceFile\CEditor\CMapEditor\CMapEditor.h" />
+    <ClInclude Include="SourceFile\CEditor\CMapEditor\CObjectAndMeshEditor.h" />
+    <ClInclude Include="SourceFile\CEditor\CMapEditor\LevelDesignPart\CLevelDesignEditor.h" />
+    <ClInclude Include="SourceFile\CEditor\CMapEditor\LevelDesignPart\CLevelDesignUI.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="SourceFile\CEditor\CHermitian.h" />
+    <ClInclude Include="SourceFile\CEditor\CMapEditor\CObjectAndMeshEditorUI.h" />
+    <ClInclude Include="SourceFile\CEditor\CMapEditor\CMeshDataIO.h" />
+    <ClInclude Include="SourceFile\CEditor\CMapEditor\CMouseEditMeshField.h" />
+    <ClInclude Include="SourceFile\CEditor\CMapEditor\CMouseWindow.h" />
+    <ClInclude Include="SourceFile\CEditor\CMapEditor\CSelectMoreObj.h" />
+    <ClInclude Include="SourceFile\CEditor\CMapEditor\C_Obj3D_DataIO.h" />
+    <ClInclude Include="SourceFile\CEditor\CMapEditor\LevelDesignPart\CCreatureDataIO.h" />
+    <ClInclude Include="SourceFile\CEditor\CMotionEditor\CMotionEditor.h" />
+    <ClInclude Include="SourceFile\CGame\CGame.h" />
+    <ClInclude Include="SourceFile\CGame\CGameUI.h" />
+    <ClInclude Include="SourceFile\Collision\CAllObj3DHitMesh.h" />
+    <ClInclude Include="SourceFile\Collision\CCollisionCircle.h" />
+    <ClInclude Include="SourceFile\Collision\CCollisionEnemyAndModel.h" />
+    <ClInclude Include="SourceFile\Collision\CCollisionJudge.h" />
+    <ClInclude Include="SourceFile\Collision\CCollisionMath.h" />
+    <ClInclude Include="SourceFile\Collision\CCollisionPlayerAndEnemy.h" />
+    <ClInclude Include="SourceFile\Collision\CCollisionPlayerAndModel.h" />
+    <ClInclude Include="SourceFile\common.h" />
+    <ClInclude Include="SourceFile\CScene\CCamera\CCamera.h" />
+    <ClInclude Include="SourceFile\CScene\CCamera\CCameraLight.h" />
+    <ClInclude Include="SourceFile\CScene\CCamera\CCameraManager.h" />
+    <ClInclude Include="SourceFile\CScene\CModel.h" />
+    <ClInclude Include="SourceFile\CScene\CScene.h" />
+    <ClInclude Include="SourceFile\CScene\CScene2D.h" />
+    <ClInclude Include="SourceFile\CScene\CScene2DIndex.h" />
+    <ClInclude Include="SourceFile\CScene\CScene3D\CScene3D.h" />
+    <ClInclude Include="SourceFile\CScene\CScene3D\CScene3D_Draw.h" />
+    <ClInclude Include="SourceFile\CScene\CSkyDome.h" />
+    <ClInclude Include="SourceFile\CScene\Factory\CModelFactory.h" />
+    <ClInclude Include="SourceFile\CScene\Factory\CScene3DFactory.h" />
+    <ClInclude Include="SourceFile\CScene\Light\CLight.h" />
+    <ClInclude Include="SourceFile\CScene\Light\CLightManager.h" />
+    <ClInclude Include="SourceFile\CScene\MeshField\CMeshField.h" />
+    <ClInclude Include="SourceFile\CScene\MeshField\CMeshFieldManager.h" />
+    <ClInclude Include="SourceFile\CTitle\CTitle.h" />
+    <ClInclude Include="SourceFile\Debug\CDebug.h" />
+    <ClInclude Include="SourceFile\Debug\CShowDebugFlag.h" />
+    <ClInclude Include="SourceFile\GameMaster\CRenderer.h" />
+    <ClInclude Include="SourceFile\GameObject\CAfterimageEffect.h" />
+    <ClInclude Include="SourceFile\GameObject\CBlood.h" />
+    <ClInclude Include="SourceFile\GameObject\CBloodStorage.h" />
+    <ClInclude Include="SourceFile\GameObject\CCube.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="SourceFile\GameObject\CDepthRenderTarget.h" />
+    <ClInclude Include="SourceFile\GameObject\CFog.h" />
+    <ClInclude Include="SourceFile\GameObject\CHuman.h" />
+    <ClInclude Include="SourceFile\GameObject\CRenderTarget2D.h" />
+    <ClInclude Include="SourceFile\GameObject\CStencilShadow.h" />
+    <ClInclude Include="SourceFile\GameObject\CWeapon.h" />
+    <ClInclude Include="SourceFile\GameObject\Enemy\CEnemy.h" />
+    <ClInclude Include="SourceFile\GameObject\Enemy\CEnemyControl.h" />
+    <ClInclude Include="SourceFile\GameObject\Enemy\CEnemyState.h" />
+    <ClInclude Include="SourceFile\GameObject\Enemy\CEnemyStorage.h" />
+    <ClInclude Include="SourceFile\GameObject\Enemy\CLifeGauge.h" />
+    <ClInclude Include="SourceFile\GameObject\Enemy\CPathBall.h" />
+    <ClInclude Include="SourceFile\GameObject\Enemy\CPathPoint.h" />
+    <ClInclude Include="SourceFile\GameObject\Enemy\EnemyDogState\CEnemyDogAttackModeState.h" />
+    <ClInclude Include="SourceFile\GameObject\Enemy\EnemyDogState\CEnemyDogAttackRecoveryState.h" />
+    <ClInclude Include="SourceFile\GameObject\Enemy\EnemyDogState\CEnemyDogBiteAttackState.h" />
+    <ClInclude Include="SourceFile\GameObject\Enemy\EnemyDogState\CEnemyDogDeadState.h" />
+    <ClInclude Include="SourceFile\GameObject\Enemy\EnemyDogState\CEnemyDogJumpAttackState.h" />
+    <ClInclude Include="SourceFile\GameObject\Enemy\EnemyDogState\CEnemyDogPatrolState.h" />
+    <ClInclude Include="SourceFile\GameObject\Enemy\EnemyDogState\CEnemyDogRorateToPlayerState.h" />
+    <ClInclude Include="SourceFile\GameObject\Enemy\EnemyDogState\CEnemyDogRunState.h" />
+    <ClInclude Include="SourceFile\GameObject\Enemy\EnemyDogState\CEnemyDogStunState.h" />
+    <ClInclude Include="SourceFile\GameObject\Enemy\EnemyDogState\CEnemyDogTopState.h" />
+    <ClInclude Include="SourceFile\GameObject\Enemy\EnemyDogState\CEnemyDogWaitState.h" />
+    <ClInclude Include="SourceFile\GameObject\Enemy\EnemyDogState\CEnemyDogWalkState.h" />
+    <ClInclude Include="SourceFile\GameObject\Enemy\StateManager\CEnemyDogStateManager.h" />
+    <ClInclude Include="SourceFile\GameObject\Enemy\StateManager\CEnemyStateManager.h" />
+    <ClInclude Include="SourceFile\GameObject\NavMesh\CNavMesh.h" />
+    <ClInclude Include="SourceFile\GameObject\NavMesh\CNavMeshManager.h" />
+    <ClInclude Include="SourceFile\GameObject\player\CCharacterCamera.h" />
+    <ClInclude Include="SourceFile\GameObject\player\CLinkPlayerToUI.h" />
+    <ClInclude Include="SourceFile\GameObject\player\CLockOnEF.h" />
+    <ClInclude Include="SourceFile\GameObject\player\CLockOnEnemy.h" />
+    <ClInclude Include="SourceFile\GameObject\player\CPlayer.h" />
+    <ClInclude Include="SourceFile\GameObject\player\CPlayerControl.h" />
+    <ClInclude Include="SourceFile\GameObject\player\PatternManager\CPlayerPatternManager.h" />
+    <ClInclude Include="SourceFile\GameObject\player\playerStatePattern\CPlayerAttack01Pattern.h" />
+    <ClInclude Include="SourceFile\GameObject\player\playerStatePattern\CPlayerAttack02Pattern.h" />
+    <ClInclude Include="SourceFile\GameObject\player\playerStatePattern\CPlayerAttack03Pattern.h" />
+    <ClInclude Include="SourceFile\GameObject\player\playerStatePattern\CPlayerAttack04Pattern.h" />
+    <ClInclude Include="SourceFile\GameObject\player\playerStatePattern\CPlayerChangeWeaponShapePattern.h" />
+    <ClInclude Include="SourceFile\GameObject\player\playerStatePattern\CPlayerDeadPattern.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="SourceFile\GameObject\player\playerStatePattern\CPlayerNeutralPattern.h" />
+    <ClInclude Include="SourceFile\GameObject\player\playerStatePattern\CPlayerPattern.h" />
+    <ClInclude Include="SourceFile\GameObject\player\playerStatePattern\CPlayerRollingPattern.h" />
+    <ClInclude Include="SourceFile\GameObject\player\playerStatePattern\CPlayerStepPattern.h" />
+    <ClInclude Include="SourceFile\GameObject\player\playerStatePattern\CPlayerStunPattern.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="SourceFile\InputDevice\input.h" />
+    <ClInclude Include="SourceFile\InputDevice\inputmouse.h" />
+    <ClInclude Include="SourceFile\InputDevice\MousePosition.h" />
+    <ClInclude Include="SourceFile\InputDevice\XInputControl.h" />
+    <ClInclude Include="SourceFile\main.h" />
+    <ClInclude Include="SourceFile\math\CPolygonMath.h" />
+    <ClInclude Include="SourceFile\math\CTextLoad.h" />
+    <ClInclude Include="SourceFile\math\CVectorMath.h" />
+    <ClInclude Include="SourceFile\math\raypicktomesh.h" />
+    <ClInclude Include="SourceFile\ModelManager\ModelManager.h" />
+    <ClInclude Include="SourceFile\ModelManager\ModelObj.h" />
+    <ClInclude Include="SourceFile\Motion\CEditorMotion.h" />
+    <ClInclude Include="SourceFile\Motion\CModelMotion.h" />
+    <ClInclude Include="SourceFile\Motion\CMotion.h" />
+    <ClInclude Include="SourceFile\Motion\CPart.h" />
+    <ClInclude Include="SourceFile\ObjectStorage\CLifeGaugeStorage.h" />
+    <ClInclude Include="SourceFile\ObjectStorage\CModelStorage.h" />
+    <ClInclude Include="SourceFile\ObjectStorage\CScene2DStorage.h" />
+    <ClInclude Include="SourceFile\ObjectStorage\CScene3DStorage.h" />
+    <ClInclude Include="SourceFile\SceneTransition\SceneManager.h" />
+    <ClInclude Include="SourceFile\SceneTransition\SceneTransition.h" />
+    <ClInclude Include="SourceFile\SceneTransition\scene\CResult.h" />
+    <ClInclude Include="SourceFile\SceneTransition\scene\CTutorial.h" />
+    <ClInclude Include="SourceFile\CShaderManager.h" />
+    <ClInclude Include="SourceFile\specialClass\CINDEX_SIZE.h" />
+    <ClInclude Include="SourceFile\specialHeader\ModelPassHeader.h" />
+    <ClInclude Include="SourceFile\specialHeader\namespaceHeader.h" />
+    <ClInclude Include="SourceFile\specialHeader\structHeader.h" />
+    <ClInclude Include="SourceFile\specialHeader\TexPassHead.h" />
+    <ClInclude Include="SourceFile\specialHeader\TextFilePass.h" />
+    <ClInclude Include="SourceFile\specialHeader\typedefHead01.h" />
+    <ClInclude Include="SourceFile\TextureManager\Tex.h" />
+    <ClInclude Include="SourceFile\TextureManager\TexManager.h" />
+    <ClInclude Include="SourceFile\UI2D\CFontUIScale.h" />
+    <ClInclude Include="SourceFile\UI2D\CFontUIScaleFactory.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="FrameworkEditor.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="ShaderCode\BasicPS.hlsl">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </FxCompile>
+    <FxCompile Include="ShaderCode\DeffuseDepthShadowPS.hlsl">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </FxCompile>
+    <FxCompile Include="ShaderCode\DeffuseDepthShadowVS .hlsl">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </FxCompile>
+    <FxCompile Include="ShaderCode\DepthTexturePS.hlsl">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </FxCompile>
+    <FxCompile Include="ShaderCode\DepthTextureVS.hlsl">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </FxCompile>
+    <FxCompile Include="ShaderCode\MotionBlurPS.hlsl">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </FxCompile>
+    <FxCompile Include="ShaderCode\MotionBlurVS.hlsl">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </FxCompile>
+    <FxCompile Include="ShaderCode\SpecularDepthShadowPS.hlsl">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </FxCompile>
+    <FxCompile Include="ShaderCode\SpecularDepthShadowVS.hlsl">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </FxCompile>
+    <FxCompile Include="ShaderCode\SpecularPS.hlsl">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </FxCompile>
+    <FxCompile Include="ShaderCode\SpecularVS.hlsl">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </FxCompile>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
